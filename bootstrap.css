@@ -41,7 +41,11 @@ body {
   height: calc(100vh - 36.5px);
   background-image: url(./media/golden-texture-powder-dust-bursting-background-illustration.jpg);
   background-size: cover;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
+
 .landing .badge {
   cursor: pointer;
   padding: 10px;
@@ -62,6 +66,8 @@ body {
   background-color: var(--green-color);
   width: 120px;
   height: 2px;
+  bottom: 27px;
+
 }
 
 .number span {
@@ -107,7 +113,7 @@ body {
 }
 .our-work .list ul li:focus,
 .our-work .list ul li:hover {
-  color: var(--green-color);
+  color:black
 }
 
 .our-work {
@@ -138,6 +144,7 @@ body {
     display: none;
   }
 }
+
 @media (max-width: 577px) {
   .stuff .row {
     display: flex;
@@ -148,13 +155,21 @@ body {
     text-align: center;
     width: 400px;
   }
-  .stuff img {
+
+}
+@media (max-width:778px) {
+  .retina img {
+    width: 130px;
+  }
+  .card-img-top{
+    max-width: 100%;
     text-align: center;
-    width: 300px;
+    margin: auto;
+    margin: 5px auto;
   }
 }
 .stuff img {
-  width: 400px;
+  width: 350px;
 }
 .stuff span {
   width: 130px;
