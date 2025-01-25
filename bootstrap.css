@@ -1,0 +1,236 @@
+:root {
+  --dak-color: hsl(216, 43%, 17%);
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --opacity-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", serif;
+}
+
+.navbar {
+  background-color: var(--dak-color);
+}
+.navbar .nav-link {
+  color: white;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
+  color: var(--green-color);
+}
+.navbar .nav-link {
+  font-size: 14px;
+}
+.search {
+  border-left: 1px solid var(--green-color);
+  cursor: pointer;
+}
+.search svg {
+  color: var(--green-color);
+  font-size: 15px;
+}
+.badge {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 11px;
+  background-color: var(--red-color);
+}
+.landing {
+  height: calc(100vh - 36.5px);
+  background-image: url(./media/golden-texture-powder-dust-bursting-background-illustration.jpg);
+  background-size: cover;
+}
+.landing .badge {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  background-color: var(--red-color);
+}
+.landing .text-center span {
+  background-color: var(--green-color);
+}
+.navbar span {
+  background-color: var(--green-color);
+}
+.all::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--green-color);
+  width: 120px;
+  height: 2px;
+}
+
+.number span {
+  font-size: 200px;
+  font-weight: 600;
+  color: var(--opacity-color);
+}
+@media (max-width: 992px) {
+  .navbar {
+    border-radius: 6px;
+    background-image: linear-gradient(to top, #141e30, #243b55);
+  }
+}
+.items {
+  margin-top: -120px;
+}
+.features .items {
+  top: 80%;
+  left: 0;
+  text-align: center;
+}
+.features .number svg {
+  color: var(--green-color);
+  font-size: 40px;
+}
+.features .number h4 {
+  color: var(--yellow-color);
+}
+.features .number p {
+  color: var(--yellow-color);
+}
+.our-work .list ul {
+  list-style: none;
+}
+.our-work .list ul .active {
+  list-style: none;
+  background-color: var(--green-color);
+  border-radius: rounded-pill;
+}
+.our-work .list ul li {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.our-work .list ul li:focus,
+.our-work .list ul li:hover {
+  color: var(--green-color);
+}
+
+.our-work {
+  background-color: #eee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  margin-top: 20px;
+}
+.gallary img {
+  border-radius: 5px;
+  max-width: 100%;
+  transition: 0.3s;
+  margin-bottom: 50px;
+  filter: grayscale(80%);
+}
+
+.gallary .imge {
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%;
+}
+.gallary .imge img:hover {
+  filter: grayscale(0);
+}
+@media (max-width: 992px) {
+  .our-work .list {
+    display: none;
+  }
+}
+@media (max-width: 577px) {
+  .stuff .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .retina {
+    width: 100%;
+    text-align: center;
+    width: 400px;
+  }
+  .stuff img {
+    text-align: center;
+    width: 300px;
+  }
+}
+.stuff img {
+  width: 400px;
+}
+.stuff span {
+  width: 130px;
+}
+.stuff .text p {
+  max-width: 500px;
+}
+.team {
+  background-color: var(--opacity-color);
+}
+.head-title {
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+}
+.head-title h2 {
+  color: var(--yellow-color);
+  font-weight: bold;
+}
+.team .row h5 {
+  max-width: 350px;
+  background-image: linear-gradient(var(--green-color), transparent);
+}
+.team .row img {
+  width: 350px;
+}
+
+.full {
+  background-color: var(--dak-color);
+  height: 200px;
+}
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.subscribe .tete {
+  border: none;
+  border-bottom: #eee 1px solid;
+  background-color: var(--yellow-color);
+}
+.subscribe .tete::placeholder {
+  color: white;
+}
+.subscribe .tete:focus {
+  outline: none;
+  transform: scale(1.1);
+}
+.subscribe .fefe {
+  background-color: var(--dak-color);
+  color: var(--yellow-color);
+  border: none;
+}
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--dak-color);
+}
+footer span:first-child {
+  color: var(--green-color);
+}
+footer span:last-child {
+  color: var(--yellow-color);
+}
+footer ul li {
+  margin-bottom: 7px;
+}
+
+footer ul {
+  list-style: none;
+  font-size: 13px;
+}
+
+footer .ss li img {
+  width: 25px;
+  margin: 7px;
+  cursor: pointer;
+}
+footer .ss li img:hover {
+  transform: scale(1.2);
+}
